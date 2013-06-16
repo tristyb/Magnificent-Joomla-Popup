@@ -9,7 +9,7 @@
 	<authorEmail>tristan@tristan-brookes.co.uk</authorEmail>
 	<authorURL>http://www.tristan-brookes.co.uk</authorURL>
 	<version>0.1</version>
-	<description>A simple Joomla adaptation of magnific popup found at http://dimsemenov.com/plugins/magnific-popup/. Support for up to ten images.</description>
+	<description>A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup</description>
 
 	<files>
 		<filename>mod_magnificJoomla.xml</filename>
