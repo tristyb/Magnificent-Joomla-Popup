@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" version="2.5" client="site" method="upgrade">
 
-	<name>MOD_MAGNIFICJOOMLA</name>
+	<name>Magnific Popup for Joomla</name>
 	<author>Tristan Brookes</author>
 	<creationDate>June 2013</creationDate>
 	<copyright>Copyright (C) 2013 Tristan Brookes</copyright>
@@ -9,7 +9,7 @@
 	<authorEmail>tristan@tristan-brookes.co.uk</authorEmail>
 	<authorURL>http://www.tristan-brookes.co.uk</authorURL>
 	<version>0.1</version>
-	<description>MOD_MAGNIFICJOOMLA_XML_DESCRIPTION</description>
+	<description>A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup. Magnific is licensed under the MIT License and as such, here's a link to that: http://opensource.org/licenses/MIT.</description>
 
 	<files>
 		<filename>mod_magnificJoomla.xml</filename>
