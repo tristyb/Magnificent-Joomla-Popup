@@ -53,7 +53,7 @@ class mod_magnificJoomlaHelper{
 				$doc = &JFactory::getDocument();
 				$app = &JFactory::getApplication();
 				$file='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
-				$file2='<script type="text/javascript">jQuery.noConflict();</script>';
+				$file2=JURI::base(true).'/modules/mod_magnificJoomla/assets/js/noConflict.js';
 				$doc->addScript($file);
 				$doc->addScript($file2);
 
