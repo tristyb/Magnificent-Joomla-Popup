@@ -1,5 +1,7 @@
 <?php
 
+#@license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+
 /* MAGNIFICENT POPUP */
 
 defined('_JEXEC') or die;
