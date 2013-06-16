@@ -2,7 +2,7 @@
 
 defined('_JEXEC') or die;
 
-class _mod_magnificJoomlaHelper{
+class mod_magnificJoomlaHelper{
 
 	public function getItems(&$params){
 
