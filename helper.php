@@ -6,6 +6,38 @@ class mod_magnificJoomlaHelper{
 
 	public function getItems(&$params){
 
+		$i = 1;
+		$max = 10;
+		$items = array();
+
+		while( $i <= 10 ):
+
+			if( $params->get( 'thumb'.$i ) != null && $params->get( 'large'.$i ) !=null ){
+				
+				$thumbnail = $params->get( 'thumb'.$i );
+				$large = $params->get('large'.$i);
+
+				if($params->get( 'caption'.$i ) ){
+					
+					$caption = $params->get( 'caption'.$i );
+
+				} else {
+					
+					$caption = '';
+
+				}
+
+				$item = "<a class='thumbnail-linker' href='/".$large."' title='".$caption."'><img src='/".$thumbnail."' class='thumbnail'></a>";
+
+				array_push( $items, $item );
+
+			} 
+
+			$i++;
+
+		endwhile;
+
+		return $items;
 
 	}
 
@@ -20,8 +52,8 @@ class mod_magnificJoomlaHelper{
 				
 				$doc = &JFactory::getDocument();
 				$app = &JFactory::getApplication();
-				$file=JURI::root(true).'/modules/mod_reslider/assets/js/jquery-1.7.2.min.js';
-				$file2=JURI::root(true).'/modules/mod_reslider/assets/js/noconflict.js';
+				$file='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
+				$file2='<script type="text/javascript">jQuery.noConflict();</script>';
 				$doc->addScript($file);
 				$doc->addScript($file2);
 

@@ -9,7 +9,7 @@
 	<authorEmail>tristan@tristan-brookes.co.uk</authorEmail>
 	<authorURL>http://www.tristan-brookes.co.uk</authorURL>
 	<version>0.1</version>
-	<description>A simple Joomla adaptation of magnific popup found at http://dimsemenov.com/plugins/magnific-popup/</description>
+	<description>A simple Joomla adaptation of magnific popup found at http://dimsemenov.com/plugins/magnific-popup/. Support for up to ten images.</description>
 
 	<files>
 		<filename>mod_magnificJoomla.xml</filename>
@@ -30,7 +30,65 @@
 			</fieldset>
 
 			<fieldset name="images" label="Images">
+				<field name="thumb1" type="media" directory="images" />
+				<field name="large1" type="media" directory="images" />
+				<field name="caption1" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
 
+				<field name="myspacer1" type="spacer" hr="true" />
+
+				<field name="thumb2" type="media" directory="images" />
+				<field name="large2" type="media" directory="images" />
+				<field name="caption2" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer2" type="spacer" hr="true" />
+
+				<field name="thumb3" type="media" directory="images" />
+				<field name="large3" type="media" directory="images" />
+				<field name="caption3" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer3" type="spacer" hr="true" />
+
+				<field name="thumb4" type="media" directory="images" />
+				<field name="large4" type="media" directory="images" />
+				<field name="caption4" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer4" type="spacer" hr="true" />
+
+				<field name="thumb5" type="media" directory="images" />
+				<field name="large5" type="media" directory="images" />
+				<field name="caption5" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer5" type="spacer" hr="true" />
+
+				<field name="thumb6" type="media" directory="images" />
+				<field name="large6" type="media" directory="images" />
+				<field name="caption6" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer6" type="spacer" hr="true" />
+
+				<field name="thumb7" type="media" directory="images" />
+				<field name="large7" type="media" directory="images" />
+				<field name="caption7" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer7" type="spacer" hr="true" />
+
+				<field name="thumb8" type="media" directory="images" />
+				<field name="large8" type="media" directory="images" />
+				<field name="caption8" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer8" type="spacer" hr="true" />
+
+				<field name="thumb9" type="media" directory="images" />
+				<field name="large9" type="media" directory="images" />
+				<field name="caption9" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer9" type="spacer" hr="true" />
+
+				<field name="thumb10" type="media" directory="images" />
+				<field name="large10" type="media" directory="images" />
+				<field name="caption10" type="textarea" default="" label="Caption" description="A caption if you want to use one" rows="2" />
+
+				<field name="myspacer10" type="spacer" hr="true" />
 			</fieldset>
 
 			<fieldset name="advanced">
