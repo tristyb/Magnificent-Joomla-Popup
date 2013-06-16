@@ -1,4 +1,6 @@
-#A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup/.
+#Tristan's Responsive Lightbox (based on magnific)
+
+A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup/.
 
 Changelog
 =========
