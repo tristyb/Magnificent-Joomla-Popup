@@ -14,8 +14,10 @@ $doc->addScript(JURI::base(true).'/modules/mod_magnificJoomla/assets/js/jquery.m
 //include the class of the helper
 require_once(dirname(__FILE__).'/helper.php');
 
-//call the class
+//call the class for items and for jQuery
 $items = mod_magnificJoomlaHelper::getItems($params);
+mod_magnificJoomlaHelper::usejquery($params);
+
 
 //keeps class suffix
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
