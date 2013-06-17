@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" version="2.5" client="site" method="upgrade">
 
-	<name>Magnific Popup for Joomla</name>
+	<name>Magnific Popup Responsive Lightbox</name>
 	<author>Tristan Brookes</author>
 	<creationDate>June 2013</creationDate>
 	<copyright>Copyright (C) 2013 Tristan Brookes</copyright>
