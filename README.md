@@ -11,3 +11,6 @@ Changelog
 Support for
 *up to 10 images
 *captions
+
+##v2
+*added some basic css for the thumbnails
