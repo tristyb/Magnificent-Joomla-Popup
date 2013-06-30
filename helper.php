@@ -8,38 +8,65 @@ class mod_magnificJoomlaHelper{
 
 	public function getItems(&$params){
 
-		$i = 1;
-		$max = 10;
-		$items = array();
+		if($params->get('module_mode') == 'images'){
 
-		while( $i <= 10 ):
+			$i = 1;
+			$max = 10;
+			$items = array();
 
-			if( $params->get( 'thumb'.$i ) != null && $params->get( 'large'.$i ) !=null ){
-				
-				$thumbnail = $params->get( 'thumb'.$i );
-				$large = $params->get('large'.$i);
+			while( $i <= 10 ):
 
-				if($params->get( 'caption'.$i ) ){
+				if( $params->get( 'thumb'.$i ) != null && $params->get( 'large'.$i ) !=null ){
 					
-					$caption = $params->get( 'caption'.$i );
+					$thumbnail = $params->get( 'thumb'.$i );
+					$large = $params->get('large'.$i);
 
-				} else {
-					
-					$caption = '';
+					if($params->get( 'caption'.$i ) ){
+						
+						$caption = $params->get( 'caption'.$i );
 
-				}
+					} else {
+						
+						$caption = '';
 
-				$item = "<a class='thumbnail-linker' href='/".$large."' title='".$caption."'><img src='/".$thumbnail."' class='thumbnail'></a>";
+					}
 
+					$item = "<a class='thumbnail-linker' href='/".$large."' title='".$caption."'><img src='/".$thumbnail."' class='thumbnail'></a>";
+
+					array_push( $items, $item );
+
+				} 
+
+				$i++;
+
+			endwhile;
+
+			return $items;
+
+		} else if ($params->get('module_mode') == 'video'){
+
+			$video = $params->get('url');
+			$items = array();
+
+			// if no thumbnail
+			if ($params->get('vidthumbnail') == 0){
+
+				$linktext = $params->get('textnail');
+				$item = "<a class='thumbnail-linker video' href='".$video."'>".$linktext."</a>";
 				array_push( $items, $item );
 
-			} 
+			// if thumbnail
+			} else if ($params->get('vidthumbnail') == 1){
 
-			$i++;
+				$linkthumb = $params->get('videothumb');
+				$item = "<a class='thumbnail-linker video' href='".$video."'><img src='/".$linkthumb."' class='thumbnail'></a>";
+				array_push( $items, $item );
+				
+			}
 
-		endwhile;
+			return $items;
 
-		return $items;
+		}
 
 	}
 

@@ -8,7 +8,7 @@
 	<license>GNU General Public License version 2 or later</license>
 	<authorEmail>tristan@tristan-brookes.co.uk</authorEmail>
 	<authorURL>http://www.tristan-brookes.co.uk</authorURL>
-	<version>0.2</version>
+	<version>0.3</version>
 	<description>A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup. Magnific is licensed under the MIT License and as such, here's a link to that: http://opensource.org/licenses/MIT.</description>
 
 	<files>
@@ -27,6 +27,10 @@
 				<field name="use_jquery" type="radio" label="MOD_MAGNIFICJOOMLA_JQUERY_LABEL" description="MOD_MAGNIFICJOOMLA_JQUERY_DESC">
 					<option value="0">No</option>
 					<option value="1">Yes</option>
+				</field>
+				<field name="module_mode" type="radio" default="images" label="MOD_MAGNIFICJOOMLA_MODULE_MODE_LABEL" description="MOD_MAGNIFICJOOMLA_MODULE_MODE_DESC">
+					<option value="images">Images</option>
+					<option value="video">Video</option>
 				</field>
 			</fieldset>
 
@@ -90,6 +94,16 @@
 				<field name="caption10" type="textarea" default="" label="Caption" description="MOD_MAGNIFICJOOMLA_CAPTION_DESC" rows="2" />
 
 				<field name="myspacer10" type="spacer" hr="true" />
+			</fieldset>
+
+			<fieldset name="video" label="MOD_MAGNIFICJOOMLA_VIDEO_LABEL">
+				<field name="url" type="url" default="" label="MOD_MAGNIFICJOOMLA_URL_LABEL" description="MOD_MAGNIFICJOOMLA_URL_DESC"/>
+				<field name="vidthumbnail" type="radio" default="0" label="MOD_MAGNIFICJOOMLA_THUMB_LABEL" description="MOD_MAGNIFICJOOMLA_THUMB_DESC">
+					<option value="0">No Thumbnail (Text Entry)</option>
+					<option value="1">Use Thumbnail (Use image chooser)</option>
+				</field>
+				<field name="textnail" type="text" default="" label="MOD_MAGNIFICJOOMLA_THUMBTEXT_LABEL" description="MOD_MAGNIFICJOOMLA_THUMBTEXT_DESC"/>
+				<field name="videothumb" type="media" directory="images" label="MOD_MAGNIFICJOOMLA_THUMBIMAGE_LABEL" description="MOD_MAGNIFICJOOMLA_THUMBIMAGE_DESC"/>
 			</fieldset>
 
 			<fieldset name="advanced">

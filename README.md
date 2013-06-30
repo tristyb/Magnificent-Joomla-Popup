@@ -7,10 +7,13 @@ Magnific is licensed under the MIT License and as such, here's a link to that: [
 Changelog
 =========
 
-##v1 - initial release
+##v0.1 - initial release
 Support for
 *up to 10 images
 *captions
 
-##v2
+##v0.2
 *added some basic css for the thumbnails
+
+##v0.3
+*added magnific's video support
