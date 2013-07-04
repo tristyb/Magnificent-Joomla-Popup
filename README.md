@@ -17,3 +17,6 @@ Support for
 
 ##v0.3
 *added magnific's video support
+
+##v0.3.1
+*Fixed a bug where images weren't relative to Joomla root
