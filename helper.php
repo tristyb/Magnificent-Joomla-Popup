@@ -31,7 +31,7 @@ class mod_magnificJoomlaHelper{
 
 					}
 
-					$item = "<a class='thumbnail-linker' href='/".$large."' title='".$caption."'><img src='/".$thumbnail."' class='thumbnail'></a>";
+					$item = "<a class='thumbnail-linker' href='".JURI::root().$large."' title='".$caption."'><img src='".JURI::root().$thumbnail."' class='thumbnail'></a>";
 
 					array_push( $items, $item );
 
@@ -59,7 +59,7 @@ class mod_magnificJoomlaHelper{
 			} else if ($params->get('vidthumbnail') == 1){
 
 				$linkthumb = $params->get('videothumb');
-				$item = "<a class='thumbnail-linker video' href='".$video."'><img src='/".$linkthumb."' class='thumbnail'></a>";
+				$item = "<a class='thumbnail-linker video' href='".$video."'><img src='".JURI::root().$linkthumb."' class='thumbnail'></a>";
 				array_push( $items, $item );
 				
 			}
