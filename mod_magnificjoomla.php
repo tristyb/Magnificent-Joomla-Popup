@@ -10,17 +10,17 @@ defined('_JEXEC') or die;
 require_once(dirname(__FILE__).'/helper.php');
 
 //call the class for items and for jQuery
-$items = mod_magnificJoomlaHelper::getItems($params);
-mod_magnificJoomlaHelper::usejquery($params);
+$items = mod_magnificjoomlaHelper::getItems($params);
+mod_magnificjoomlaHelper::usejquery($params);
 
 //add magnificent popup css
 $doc =& JFactory::getDocument();
-$doc->addStyleSheet(JURI::base(true).'/modules/mod_magnificJoomla/assets/css/magnific-popup.css', 'text/css');
+$doc->addStyleSheet(JURI::base(true).'/modules/mod_magnificjoomla/assets/css/magnific-popup.css', 'text/css');
 
 //add scripts
-$doc->addScript(JURI::base(true).'/modules/mod_magnificJoomla/assets/js/jquery.magnific-popup.min.js');
+$doc->addScript(JURI::base(true).'/modules/mod_magnificjoomla/assets/js/jquery.magnific-popup.min.js');
 
 //keeps class suffix
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
-require(JModuleHelper::getLayoutPath('mod_magnificJoomla'));;
+require(JModuleHelper::getLayoutPath('mod_magnificjoomla'));;

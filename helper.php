@@ -4,7 +4,7 @@
 
 defined('_JEXEC') or die;
 
-class mod_magnificJoomlaHelper{
+class mod_magnificjoomlaHelper{
 
 	public function getItems(&$params){
 
@@ -17,16 +17,16 @@ class mod_magnificJoomlaHelper{
 			while( $i <= 10 ):
 
 				if( $params->get( 'thumb'.$i ) != null && $params->get( 'large'.$i ) !=null ){
-					
+
 					$thumbnail = $params->get( 'thumb'.$i );
 					$large = $params->get('large'.$i);
 
 					if($params->get( 'caption'.$i ) ){
-						
+
 						$caption = $params->get( 'caption'.$i );
 
 					} else {
-						
+
 						$caption = '';
 
 					}
@@ -35,7 +35,7 @@ class mod_magnificJoomlaHelper{
 
 					array_push( $items, $item );
 
-				} 
+				}
 
 				$i++;
 
@@ -61,7 +61,7 @@ class mod_magnificJoomlaHelper{
 				$linkthumb = $params->get('videothumb');
 				$item = "<a class='thumbnail-linker video' href='".$video."'><img src='".JURI::root().$linkthumb."' class='thumbnail'></a>";
 				array_push( $items, $item );
-				
+
 			}
 
 			return $items;
@@ -73,12 +73,12 @@ class mod_magnificJoomlaHelper{
 	public function usejquery(&$params){
 
 		if($params->get('use_jquery')){
-			
+
 			JLoader::import( 'joomla.version' );
 			$version = new JVersion();
-			
+
 			if (version_compare( $version->RELEASE, '2.5', '<=')) {
-				
+
 				$doc = &JFactory::getDocument();
 				$app = &JFactory::getApplication();
 				$file='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
@@ -87,11 +87,11 @@ class mod_magnificJoomlaHelper{
 				$doc->addScript($file2);
 
 			} else {
-				
+
 				JHtml::_('jquery.framework');
 
-			}	
-		
+			}
+
 		}
 
 	}
