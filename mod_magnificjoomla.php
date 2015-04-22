@@ -6,12 +6,13 @@
 
 defined('_JEXEC') or die;
 
+JHtml::_('jquery.framework');
+
 //include the class of the helper
 require_once(dirname(__FILE__).'/helper.php');
 
 //call the class for items and for jQuery
 $items = mod_magnificjoomlaHelper::getItems($params);
-mod_magnificjoomlaHelper::usejquery($params);
 
 //add magnificent popup css
 $doc =& JFactory::getDocument();

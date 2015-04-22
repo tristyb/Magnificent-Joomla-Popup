@@ -70,30 +70,4 @@ class mod_magnificjoomlaHelper{
 
 	}
 
-	public function usejquery(&$params){
-
-		if($params->get('use_jquery')){
-
-			JLoader::import( 'joomla.version' );
-			$version = new JVersion();
-
-			if (version_compare( $version->RELEASE, '2.5', '<=')) {
-
-				$doc = &JFactory::getDocument();
-				$app = &JFactory::getApplication();
-				$file='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
-				$file2=JURI::base(true).'/modules/mod_magnificJoomla/assets/js/noConflict.js';
-				$doc->addScript($file);
-				$doc->addScript($file2);
-
-			} else {
-
-				JHtml::_('jquery.framework');
-
-			}
-
-		}
-
-	}
-
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="module" version="2.5" client="site" method="upgrade">
+<extension type="module" version="3.0" client="site" method="upgrade">
 
 	<name>Webhaus Magnific Popup Responsive Lightbox</name>
 	<author>Tristan Brookes</author>
@@ -7,7 +7,7 @@
 	<copyright>Copyright (C) 2013 Tristan Brookes</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<authorEmail>tristan@webhaus.co.uk</authorEmail>
-	<authorURL>http://www.webhaus.co.uk</authorURL>
+	<authorURL>https://www.webhaus.co.uk</authorURL>
 	<version>0.3.3</version>
 	<description>A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup. Magnific is licensed under the MIT License and as such, here's a link to that: http://opensource.org/licenses/MIT.</description>
 
@@ -29,10 +29,6 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="use_jquery" type="radio" label="MOD_MAGNIFICJOOMLA_JQUERY_LABEL" description="MOD_MAGNIFICJOOMLA_JQUERY_DESC">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
-				</field>
 				<field name="module_mode" type="radio" default="images" label="MOD_MAGNIFICJOOMLA_MODULE_MODE_LABEL" description="MOD_MAGNIFICJOOMLA_MODULE_MODE_DESC">
 					<option value="images">Images</option>
 					<option value="video">Video</option>
