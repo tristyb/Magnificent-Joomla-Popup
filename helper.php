@@ -6,7 +6,7 @@ defined('_JEXEC') or die;
 
 class mod_magnificjoomlaHelper{
 
-	public function getItems(&$params){
+	public static function getItems(&$params){
 
 		if($params->get('module_mode') == 'images'){
 
@@ -70,4 +70,7 @@ class mod_magnificjoomlaHelper{
 
 	}
 
+  public static function getModuleId($module){
+    return $module->id;
+  }
 }

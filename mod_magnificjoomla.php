@@ -13,9 +13,10 @@ require_once(dirname(__FILE__).'/helper.php');
 
 //call the class for items and for jQuery
 $items = mod_magnificjoomlaHelper::getItems($params);
+$module_id = mod_magnificjoomlaHelper::getModuleId($module);
 
 //add magnificent popup css
-$doc =& JFactory::getDocument();
+$doc = JFactory::getDocument();
 $doc->addStyleSheet(JURI::base(true).'/modules/mod_magnificjoomla/assets/css/magnific-popup.css', 'text/css');
 
 //add scripts
