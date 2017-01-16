@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
 
-	<name>Webhaus Magnific Popup Responsive Lightbox</name>
+	<name>Tristan's Magnific Popup Responsive Lightbox</name>
 	<author>Tristan Brookes</author>
 	<creationDate>June 2013</creationDate>
 	<copyright>Copyright (C) 2013 Tristan Brookes</copyright>
 	<license>GNU General Public License version 2 or later</license>
-	<authorEmail>tristan@webhaus.co.uk</authorEmail>
-	<authorURL>https://www.webhaus.co.uk</authorURL>
+	<authorEmail>extensions@tristanbrook.es</authorEmail>
+	<authorURL>https://tristanbrook.es</authorURL>
 	<version>0.3.4</version>
 	<description>A simple Joomla version of the Magnific Popup responsive lightbox from http://dimsemenov.com/plugins/magnific-popup. Magnific is licensed under the MIT License and as such, here's a link to that: http://opensource.org/licenses/MIT.</description>
 
@@ -25,6 +25,10 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_magnificjoomla.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_magnificjoomla.sys.ini</language>
 	</languages>
+
+  <updateservers>
+		<server type="extension" name="mod_tristans_responsive_slider" priority="1">https://tristanbrook.es/assets/files/mod_magnific_update.xml</server>
+	</updateservers>
 
 	<config>
 		<fields name="params">
