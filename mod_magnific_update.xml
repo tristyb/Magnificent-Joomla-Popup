@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <updates>
 	<update>
-		<name>Tristan's Magnific Popup Responsive Lightbox</name>
+		<name>Webhaus Magnific Popup Responsive Lightbox</name>
 		<description>Added auto-update functionality | Fixed multiple galleries merging</description>
 		<element>mod_magnificjoomla</element>
 		<type>module</type>

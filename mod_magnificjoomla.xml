@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
 
-	<name>Tristan's Magnific Popup Responsive Lightbox</name>
+	<name>Webhaus Magnific Popup Responsive Lightbox</name>
 	<author>Tristan Brookes</author>
 	<creationDate>June 2013</creationDate>
 	<copyright>Copyright (C) 2013 Tristan Brookes</copyright>
